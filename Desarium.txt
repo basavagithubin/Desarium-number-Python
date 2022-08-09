@@ -1,0 +1,13 @@
+for n in range(1,101):
+    n=str(n)
+    l=len(n)
+    m=n=int(n)
+    s=0
+    while l>0:
+        s=s+((n%10)**l)
+        n=n//10 
+        l=l-1
+    if s==m :
+        print(m)
+    else:
+        continue
